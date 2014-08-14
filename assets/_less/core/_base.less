@@ -1,0 +1,55 @@
+// Base Styles
+// --------------------------------------------------------------------------
+
+body {
+    background: @color1;
+    text-align: center;
+}
+
+// Layout
+// --------------------------------------------------------------------------
+
+#container {
+    position: relative;
+    top: 3.125rem;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+
+// Content Area
+// --------------------------------------------------------------------------
+
+[role="main"] {
+    position: relative;
+    max-width: @max-width;
+    margin-left: auto;
+    margin-right: auto;
+    section {
+        color: @black;
+        margin-bottom: 3em;
+        padding-bottom: 3em;
+    }
+    article {
+        position: relative; 
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    header {
+        position: relative;
+        margin-top: 1em !important;
+        padding-bottom: 1em !important;
+    }
+    footer {
+        position: relative;
+        background: none;
+        border-bottom: 1px solid @white;
+    }
+}
+
+footer {
+    background: @black;
+}

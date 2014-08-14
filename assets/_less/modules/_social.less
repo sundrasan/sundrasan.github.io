@@ -1,0 +1,59 @@
+// Social Colors
+// --------------------------------------------------------------------------
+
+@facebook:      #3B5998;
+@twitter:       #4099FF;
+@google:        #d34836;
+@linkedin:      #d34836;
+@pinterest:     #c92228;
+
+
+// Social Styles
+// --------------------------------------------------------------------------
+
+.social {
+    @height: 3em;
+    height: @height;
+    text-align: center;
+    a {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+        font-size: @height / 3;
+        padding: @height / ( 2 * 3);
+        text-align: center;
+        color: @white;
+        i {
+            font-size: @height / 2;
+        }
+    }
+}
+.fb {
+    @color: @facebook;
+    background: @color !important;
+    &:hover {
+        background: lighten(@color, 10%) !important;
+    }
+}
+.tw {
+    @color: @twitter;
+    background: @color;
+    &:hover {
+        background: lighten(@color, 10%) !important;
+    }
+}
+.gp {
+    @color: @google;
+    background: @color;
+    &:hover {
+        background: lighten(@color, 10%) !important;
+    }
+}
+
+.top {
+    @color: @black-dark;
+    background: @color;
+    &:hover {
+        background: @black;
+    }
+}
